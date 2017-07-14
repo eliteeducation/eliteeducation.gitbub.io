@@ -15,6 +15,11 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+
+.navbar-inverse {
+    background-color: #1b6d85 !important;
+    border-color: #080808;
+}
 .img-portfolio {
     margin-bottom: 30px;
 }
