@@ -4,282 +4,424 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Elite Education Côte d'Ivoire</title>
+    <title>Material Design Bootstrap</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+        
+        main {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+        
+        .extra-margins {
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+         .navbar {
+            background-color: #3b3b3f;
+        }
+        
+        footer.page-footer {
+            background-color: #3b3b3f;
+            margin-top: 2rem;
+         
+        }
+    </style>
 
 </head>
 
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Elite Education </a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="qui.html">Qui sommes nous ?</a>
-                </li>
-                <li>
-                    <a href="services.html">Nos Services</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contactez-vous</a>
-                </li>
 
-                </li>
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-toggleable-md navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#" >
+                    <span style="color:#FFD700">Elite</span>
+                    <span style="color:#BC43F2">Education</span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link">Acceuil <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link">Les cours de vacances</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Le Système Elite Education </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link">Intranet</a>
+                        </li>
+                        <li class="nav-item dropdown btn-group">
+                            <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recrutements</a>
+                            <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
+                                <a class="dropdown-item">Enseignants</a>
+                                <a class="dropdown-item">Conseillers d'Education</a>
+                                <!--<a class="dropdown-item">Something else here</a>-->
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                    <!--<form class="form-inline waves-effect waves-light">-->
+                        <!--<input class="form-control" type="text" placeholder="Recherche">-->
+                    <!--</form>-->
+                </div>
+            </div>
+        </nav>
+	    <!--/.Navbar-->
+
+    </header>
+
+    <main>
+
+        <!--Main layout-->
+        <div class="container">
+            <!--First row-->
+
+            <!--/.First row-->
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div id="wearepro" class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="row wow fadeIn" data-wow-delay="0.2s">
+                            <div class="col-lg-7">
+                                <!--Featured image -->
+                                <div class="view overlay hm-white-light z-depth-1-half">
+                                    <img src="http://mdbootstrap.com/img/Photos/Slides/img%20%2877%29.jpg" class="img-fluid " alt="">
+                                    <div class="mask">
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+
+                            <!--Main information-->
+                            <div class="col-lg-5">
+                                <h2 class="h2-responsive">Nous sommes professionnels</h2>
+                                <hr>
+                                <ul>
+                                    <li>Notre objectif : l'autonomie rapide de votre enfant.</li>
+                                    <li>Notre priorité : son succès.</li>
+                                </ul>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis pariatur quod ipsum atque quam dolorem voluptate officia sunt placeat consectetur alias fugit cum praesentium ratione sint mollitia, perferendis natus quaerat!</p>-->
+                                <a href="" class="btn btn-info">Lire la suite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="obligresultat" class="carousel-item">
+                        <div class="row fadeIn" >
+                            <div class="col-lg-7">
+                                <!--Featured image -->
+                                <div class="view overlay hm-white-light z-depth-1-half">
+                                    <img src="http://mdbootstrap.com/img/Photos/Slides/img%20%2877%29.jpg" class="img-fluid " alt="">
+                                    <div class="mask">
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+
+                            <!--Main information-->
+                            <div class="col-lg-5">
+                                <h2 class="h2-responsive">Nous avons obligation de résultats</h2>
+                                <hr>
+                                <ul>
+                                    <li>Nous vous remboursons, si votre enfant n'a pas l'examen.</li>
+                                    <li>2017 : Nous avons réalisé 100% de réussite aux examens.</li>
+                                </ul>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis pariatur quod ipsum atque quam dolorem voluptate officia sunt placeat consectetur alias fugit cum praesentium ratione sint mollitia, perferendis natus quaerat!</p>-->
+                                <a href="" class="btn btn-info">Lire la suite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row fadeIn" >
+                            <div class="col-lg-7">
+                                <!--Featured image -->
+                                <div class="view overlay hm-white-light z-depth-1-half">
+                                    <img src="http://mdbootstrap.com/img/Photos/Slides/img%20%2877%29.jpg" class="img-fluid " alt="">
+                                    <div class="mask">
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+
+                            <!--Main information-->
+                            <div class="col-lg-5">
+                                <h2 class="h2-responsive">Nous nous adaptons à votre enfant</h2>
+                                <hr>
+
+                               <p>Parce que votre enfant est unique, toute méthode d'enseignement doit s'adapter à lui et non l'inverse.</p>
+                                <a href="" class="btn btn-info">Lire la suite</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+
+
+
+
+
+
+            <hr class="extra-margins">
+
+            <!--Second row-->
+            <div class="row">
+                <!--First columnn-->
+                <div class="col-lg-4">
+                    <!--Card-->
+                    <div class="card wow fadeIn" data-wow-delay="0.4s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(37).jpg" class="img-fluid" alt="">
+                            <a href="#">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title">Un suivi rapproché</h4>
+                            <!--Text-->
+                            <p class="card-text">Nous vous assurons à votre enfant, un suivi unique en son genre comprenant une collaboration étroite avec l'école de votre enfant.</p>
+                            <a href="#" class="btn btn-info">Lire la suite</a>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--First columnn-->
+
+                <!--Second columnn-->
+                <div class="col-lg-4">
+                    <!--Card-->
+                    <div class="card wow fadeIn" data-wow-delay="0.6s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(21).jpg" class="img-fluid" alt="">
+                            <a href="#">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title">Un corps enseignant de haut niveau</h4>
+                            <!--Text-->
+                            <p class="card-text">Nos enseignants rigoureusement sélectionnés sont formés à la méthode Elite Education System.</p>
+                            <a href="#" class="btn btn-info">Lire la suite</a>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Second columnn-->
+
+                <!--Third columnn-->
+                <div class="col-lg-4">
+                    <!--Card-->
+                    <div class="card wow fadeIn" data-wow-delay="0.8s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(12).jpg" class="img-fluid" alt="">
+                            <a href="#">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <h4 class="card-title">Une approche qualitative irr&eacute;prochable</h4>
+                            <p class="card-text">Nous mettons votre enfant est au centre de nos pr&eacute;ocupations.
+                                Le coach Elite Education doit apprendre à le connaitre...</p>
+                            <a href="#" class="btn btn-info">Lire la suite</a>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Third columnn-->
+            </div>
+            <!--/.Second row-->
+        </div>
+        <!--/.Main layout-->
+
+    </main>
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-md-3 offset-lg-1 hidden-lg-down">
+                    <h5 class="title">A propos de Elite Education</h5>
+                    <p>La société Elite Education a été crée par des enseigants, des coaches ainsi que des parents d'élèves ayant à coeur la qualité de l'éducation de leurs enfants.
+
+                    </p>
+                    Grâce au concours de formateur et de professionnels de la pédagogie, ils ont mis au point un système permettant d'assurer le succès scolaire et l'entrée dans le mode professionnel des jeunes élèves et étudiants.
+                    <p>
+
+                    </p>
+
+
+                </div>
+                <!--/.First column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Second column-->
+                <div class="col-lg-2 col-md-4 offset-lg-1">
+                    <h5 class="title">Renouvellement</h5>
+                    <ul>
+                        <li><a href="#!">YEKANGOA 2018</a></li>
+                        <li><a href="#!">YEKANGOA GOSPEL EXPO</a></li>
+                        <li><a href="#!">Cours de vacances</a></li>
+
+                    </ul>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Third column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title">Développement personel</h5>
+                    <ul>
+                        <li><a href="#!">Imagine ton futur</a></li>
+                        <li><a href="#!">Sessions de coaching groupé</a></li>
+                        <li><a href="#!">Coaching individuel</a></li>
+
+                    </ul>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Fourth column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title">Nous Contacter</h5>
+                    <ul>
+                        <li><a href="#!">Recrutement</a></li>
+                        <li><a href="#!">Partenariats</a></li>
+                        <li><a href="#!">Investisseurs</a></li>
+                        <!--<li><a href="#!">Link 4</a></li>-->
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <hr>
+
+        <!--Call to action-->
+        <div class="call-to-action">
+            <h4>Material Design for Bootstrap</h4>
+            <ul>
+                <li>
+                    <h5>Get our UI KIT for free</h5></li>
+                <li><a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-danger" rel="nofollow">Sign up!</a></li>
+                <li><a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-info" rel="nofollow">Learn more</a></li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
-<header id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+        <!--/.Call to action-->
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill" style="min-height: 250px;max-height: 750px; background-image:url('img/male_black_teacher_in_classroom_900x502.jpg');">
-                <img style="width: 100%; ; min-height: 250px;max-height: 750px;" class="d-block img-fluid"
-                     src="img/male_black_teacher_in_classroom_900x502.jpg" alt="Cours soutien">
-            </div>
-            <div class="carousel-caption">
-                <h2>Cours de vacances</h2>
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                <p> &copy; Elite Education <script>document.write(new Date().getFullYear())</script></p>
+
             </div>
         </div>
-        <div class="item">
-            <div class="fill" style="min-height: 250px;max-height: 750px; background-image:url('img/CANVA_IMAGINE_TON_FUTUR_3_550x300.png');">
-                <img style="width: 100%; min-height: 250px;max-height: 750px;" class="d-block img-fluid"
-                     src="img/CANVA_IMAGINE_TON_FUTUR_3_550x300.png" alt="Imagine ton future">
-            </div>
-            <div class="carousel-caption">
-                <h2>Forum Imagine ton futur</h2>
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill"
-                 style="min-height: 250px;max-height: 750px; background-image:url('img/gospel_Expo.jpg');">
-                <img style="width: 100%;  min-height: 250px;max-height: 750px;" class="d-block img-fluid"
-                     src="img/gospel_Expo.jpg" alt="Gospel Expo">
+        <!--/.Copyright-->
 
-            </div>
-            <div class="carousel-caption">
-                <h2>YEKANGOA Gospel Expo</h2>
-            </div>
-        </div>
-    </div>
+    </footer>
+    <!--/.Footer-->
 
-    <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
-</header>
-<div class="container">
-    <div class="row ">
-        <div class="col-lg-12">
-            <!-- Header Carousel -->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    <!--<script>-->
+    <!--new WOW().init();-->
+    <!--</script>-->
 
 
 
-            <button type="button" class="pull-left btn btn-default visible-xs" data-toggle="offcanvas"
-                    aria-expanded="false" aria-controls="navbar">
-                <i class="fa fa-navicon"></i>
-            </button>
-            <!-- Page Content -->
-            <!--<div class="container">-->
-
-            <!-- Marketing Icons Section -->
-            <div class="col-xs-12 col-sm-9 col-md-12" >
-                <div>
-                    <h1 class="page-header">
-                        Le Système Elite Education
-                    </h1>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-check"></i> YEKANGOA GOSPEL EXPO</h4>
-                        </div>
-                        <div class="panel-body" style="max-height: 300px;min-height: 300px">
-                            <p>« Signifiant, en langue Baoulé « apprendre en s’amusant», Yékangoa est stage d’éveil
-                                artistique liant la musique, la peinture et le théâtre.
-                                Il s’agit d’une colonie de vacances au cours de laquelle les jeunes sont formés, dans un
-                                village d’accueil touristique, par des professionnels aux métiers de l’art (les
-                                instruments de musique, la chorégraphie, chants, théâtre, peinture).
-                                Il a pour but l’évasion, la récréation et l’épanouissement des enfants après des mois
-                                d’étude.»
-                            </p>
-                            <a href="#" class="btn btn-primary">En Savoir Plus</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-gift"></i> LES COURS DE VACANCES</h4>
-                        </div>
-                        <div class="panel-body" style="max-height: 300px;min-height: 300px">
-                            <p>Le stage de vacances appelé « cours de vacances » est l’occasion pour votre enfant se
-                                4 sur les notions non maîtrisées en classe l’année scolaire précédente et
-                                d’avoir un aperçu des notions de l’année suivante.
-                                Ce stage vise à permettre à l’enfant d’aborder avec assurance et sérénité la nouvelle
-                                année scolaire.
-                                Le stage de vacances est gratuit pour les participants à YEKANGOA.
-                            </p>
-                            <a href="#" class="btn btn-primary">En Savoir Plus</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-compass"></i> IMAGINE TON FUTUR</h4>
-                        </div>
-                        <div class="panel-body" style="max-height: 300px;min-height: 300px">
-                            <p>Avez-vous connaissance de l'ensemble des débouchées offertes à vos enfants après les
-                                études ?
-                                Votre enfant a-t-il une ambition claire ? Connait-il les étapes pour l'atteindre ?
-                                IMAGINE TON FUTUR est un forum rassemblant des professionnels représentant plus d'une
-                                cinquantaine de métiers différents.
-                                Des médecins, chirurgiens, ingénieurs en informatique, architectes viendront avec une
-                                partie de leur appareillage professionnel pour exposer leur métier aux enfants et jeunes
-                                participants au forum.
-
-
-                            </p>
-                            <a href="#" class="btn btn-primary">En savoir plus</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- /.row -->
-
-
-
-                <!-- Features Section -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="page-header">Le meilleur service de côte d'ivoire</h2>
-                    </div>
-                    <div class="col-md-6">
-                        <p>Un suivi unique</p>
-                        <ul>
-                            <li><strong>la bla bla </strong>
-                            </li>
-                            <li>Bla bla bla </li>
-                            <li>Le prof va à l'école de l'enfant une fois par mois</li>
-                            <li>Wla bla bla </li>
-                            <li>Pas encore terminé>
-                            <li>Mariam joue à la balle</li>
-                        </ul>
-                        <p>Ici égalalement, il s'agit d'un texte important mais je n'ai encore rien écrit !.
-                        Ici égalalement, il s'agit d'un texte important mais je n'ai encore rien écrit !.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <img class="img-responsive" src="http://placehold.it/700x450" alt="">
-                    </div>
-                </div>
-                <!-- /.row -->
-
-                <hr>
-
-                <!-- Call to Action Section -->
-                <div class="well">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe,
-                                vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores
-                                commodi.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a class="btn btn-lg btn-default btn-block" href="contact.html">Contactez-nous</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p> &copy; Elite Education <script>document.write(new Date().getFullYear())</script></p>
-                    </div>
-                </div>
-            </footer>
-
-        </div>
-        <!--<div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">-->
-            <!--<div class="list-group">-->
-                <!--<a href="#" class="list-group-item active">lien actif</a>-->
-                <!--<a href="#" class="list-group-item">Lien 2</a>-->
-                <!--<a href="#" class="list-group-item">Lien 3</a>-->
-                <!--<a href="#" class="list-group-item">Lien 4</a>-->
-                <!--<a href="#" class="list-group-item">Lien 5</a>-->
-
-            <!--</div>-->
-        <!--</div>-->
-    </div>
-</div>
-<!--</div>-->
-<!-- /.container -->
-
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Script to Activate the Carousel -->
-<script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-</script>
-
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+    </script>
 </body>
 
 </html>
