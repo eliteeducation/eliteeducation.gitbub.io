@@ -4,237 +4,220 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Elite Education Abidjan</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <![endif]-->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
 
+        main {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+
+        .extra-margins {
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        .navbar {
+            background-color: #3b3b3f;
+        }
+
+        footer.page-footer {
+            background-color: #3b3b3f;
+            margin-top: 2rem;
+
+        }
+    </style>
 </head>
 
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Elite Education </a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="qui.html">Qui sommes nous ?</a>
-                </li>
-                <li>
-                    <a href="services.html">Nos Services</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+<header>
 
-                </li>
-            </ul>
+    <!--Navbar-->
+    <nav class="navbar navbar-toggleable-md navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <span style="color:#FFD700">Elite</span>
+                <span style="color:#BC43F2">Education</span> Abidjan
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="coursvacances.html">Les cours de vacances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="systeme.html">Le Système Elite Education </a>
+                    </li>
+                    <li class="nav-item dropdown btn-group">
+                        <a class="nav-link dropdown-toggle"  id="menu-systeme" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Les services </a>
+                        <div class="dropdown-menu dropdown" aria-labelledby="menu-systeme">
+                            <a class="dropdown-item">Les services</a>
+                            <!--<a class="dropdown-item">Conseillers d'Education</a>-->
+                            <!--<a class="dropdown-item">Something else here</a>-->
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link">Intranet</a>
+                    </li>
+                    <li class="nav-item dropdown btn-group">
+                        <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Recrutements</a>
+                        <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item">Enseignants</a>
+                            <a class="dropdown-item">Conseillers d'Education</a>
+                            <!--<a class="dropdown-item">Something else here</a>-->
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacts</a>
+                    </li>
+                </ul>
+                <!--<form class="form-inline waves-effect waves-light">-->
+                <!--<input class="form-control" type="text" placeholder="Recherche">-->
+                <!--</form>-->
+            </div>
         </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+    </nav>
+    <!--/.Navbar-->
+
+</header>
 
 <!-- Page Content -->
 <div class="container">
 
-    <!-- Page Heading/Breadcrumbs -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Nos Services
-                <small></small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="index.html">Accueil</a>
-                </li>
-                <li class="active">Nos Services</li>
-            </ol>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Image Header -->
-    <div class="row">
-        <div class="col-lg-12">
-            <img class="img-responsive" src="http://placehold.it/1200x300" alt="">
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Service Panels -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Nos Services</h2>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-                        </span>
-                </div>
-                <div class="panel-body">
-                    <h4>LES COURS DE VACANCES</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a id="service-link-cours-vacances" href="#service-tab-cours-vacances" class="btn btn-primary">En savoir plus</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span>
-                </div>
-                <div class="panel-body">
-                    <h4>IMAGINE TON FUTUR</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a id="service-link-imagine-futur" href="#service-tab-imagine-futur" class="btn btn-primary">En savoir plus</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span>
-                </div>
-                <div class="panel-body">
-                    <h4>LA SEMAINE COACHING</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a  id="service-link-coaching" href="#service-tab-coaching" class="btn btn-primary">En savoir plus</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="panel panel-default text-center">
-                <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span>
-                </div>
-                <div class="panel-body">
-                    <h4>LE SOUTIEN SCOLAIRE</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <a id="service-link-soutien-scolaire" href="#service-tab-soutien-scolaire" class="btn btn-primary">En savoir plus</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Service Tabs -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Détails des services</h2>
+    <div class="col-lg-12">
+
+        <!--First row-->
+        <div class="row wow fadeIn" data-wow-delay="0.4s">
+            <div class="col-md-12">
+                <!--Product-->
+                <div class="product-wrapper">
+
+                    <!--Featured image-->
+                    <div class="view overlay hm-white-light">
+                        <img src="img/teacher-talking-with-students_970x450.jpg" class="img-fluid " alt="">
+                        <!--<div class="mask">-->
+                        <!--</div>-->
+
+                    </div>
+                    <!--/.Featured image-->
+
+                    <br>
+
+                    <!--Product data-->
+                    <h2 class="h2-responsive">Product title</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius totam, officiis doloremque velit nobis dolor nulla unde architecto alias praesentium, soluta error omnis sint, impedit, delectus ipsam eveniet debitis nemo.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius totam, officiis doloremque velit nobis dolor nulla unde architecto alias praesentium, soluta error omnis sint, impedit, delectus ipsam eveniet debitis nemo.</p>
+
+                    <!--<ul class="rating inline-ul">-->
+                        <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                        <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                        <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                        <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                        <!--<li><i class="fa fa-star"></i></li>-->
+                    <!--</ul>-->
+
+                </div>
+                <!--Product-->
+
+            </div>
         </div>
-        <div class="col-lg-12">
+        <!--/.First row-->
 
-            <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active"><a id="service-tab-cours-vacances" href="#service-detail-cours-vacances" data-toggle="tab"><i class="fa fa-tree"></i> Cours de vacances</a>
-                </li>
-                <li class=""><a id="service-tab-imagine-futur" href="#service-detail-imagine-futur" data-toggle="tab"><i class="fa fa-car"></i> Imagine
-                    ton futur</a>
-                </li>
-                <li class=""><a id="service-tab-coaching" href="#service-detail-coaching" data-toggle="tab"><i class="fa fa-support"></i> La semaine de Coaching</a>
-                </li>
-                <li class=""><a id="service-tab-cours-soutien" href="#service-detail-soutien-scolaire" data-toggle="tab"><i class="fa fa-database"></i>Le soutien scolaire</a>
-                </li>
-            </ul>
+        <!--Second row-->
+        <div class="row">
 
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade active in" id="service-detail-cours-vacances">
-                    <h4>Les cours de vacances</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate
-                        excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit,
-                        accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas
-                        eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate
-                        excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit,
-                        accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas
-                        eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
-                <div class="tab-pane fade" id="service-detail-imagine-futur">
-                    <h4>Imagine ton futur</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate
-                        excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit,
-                        accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas
-                        eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate
-                        excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit,
-                        accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas
-                        eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
-                <div class="tab-pane fade" id="service-detail-coaching">
-                    <h4>LA semaine de coaching</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate
-                        excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit,
-                        accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas
-                        eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate
-                        excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit,
-                        accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas
-                        eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
-                <div class="tab-pane fade" id="service-detail-soutien-scolaire">
-                    <h4>Le Soutien scolaire</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate
-                        excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit,
-                        accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas
-                        eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate
-                        excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit,
-                        accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas
-                        eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+            <!--Heading-->
+            <div class="col reviews wow fadeIn" data-wow-delay="0.4s">
+                <h2 class="h2-responsive">Reviews</h2>
+            </div>
+
+            <!--First review-->
+            <div class="media wow fadeIn" data-wow-delay="0.2s">
+                <a class="media-left" href="#">
+                    <img class="rounded-circle" src="http://mdbootstrap.com/img//Photos/Avatars/avatar-7.jpg" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">John Doe</h4>
+                    <!--<ul class="rating inline-ul">-->
+                        <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                        <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                        <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                        <!--<li><i class="fa fa-star"></i></li>-->
+                        <!--<li><i class="fa fa-star"></i></li>-->
+                    <!--</ul>-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
                 </div>
             </div>
 
+            <!--Second review-->
+            <br><div class="media wow fadeIn" data-wow-delay="0.2s">
+            <a class="media-left" href="#">
+                <img class="rounded-circle" src="http://mdbootstrap.com/img//Photos/Avatars/avatar-5.jpg" alt="Generic placeholder image">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Maria Casie</h4>
+                <!--<ul class="rating inline-ul">-->
+                    <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                    <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                    <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                    <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                    <!--<li><i class="fa fa-star amber-text"></i></li>-->
+                <!--</ul>-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+            </div>
         </div>
+
+            <!--Second review-->
+            <br><div class="media wow fadeIn" data-wow-delay="0.2s">
+            <a class="media-left" href="#">
+                <img class="rounded-circle" src="http://mdbootstrap.com/img//Photos/Avatars/avatar-10.jpg" alt="Generic placeholder image">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Kate Snow</h4>
+                <ul class="rating inline-ul">
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star amber-text"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+            </div>
+        </div>
+
+        </div>
+        <!--/.Second row-->
+
     </div>
 
     <!-- /.row -->
@@ -253,46 +236,18 @@
 </div>
 <!-- /.container -->
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/tether.min.js"></script>
 
-<script>
-    $(function () {
-        console.log("iJQUey initialisé");
-        $('#service-link-imagine-futur').click(function () {
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-            activaTab('imagine-futur');
-          //  $('#service-link-imagine-futur').addClass(' active');
-        });
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
 
-        $('#service-link-cours-vacances').click(function () {
-
-            activaTab('cours-vacances');
-            //  $('#service-link-imagine-futur').addClass(' active');
-        });
-
-        $('#service-link-coaching').click(function () {
-
-            activaTab('coaching');
-            //  $('#service-link-imagine-futur').addClass(' active');
-        });
-
-        $('#service-link-soutien-scolaire').click(function () {
-
-            activaTab('soutien-scolaire');
-            //  $('#service-link-imagine-futur').addClass(' active');
-        });
-    });
-
-
-
-    function activaTab(tab){
-        $('.nav-tabs a[href="#service-detail-' + tab + '"]').tab('show');
-    };
-</script>
 
 </body>
 
