@@ -11,7 +11,7 @@
 
     <!-- Font Awesome -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">-->
-
+    <link href="css/toastr.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -88,6 +88,8 @@
 
 
         <hr class="extra-margins">
+        <h2 class="h2-responsive">Nos 3 offres principales</h2>
+        <hr class="extra-margins">
 
         <!--Second row-->
         <div class="row">
@@ -142,7 +144,7 @@
                             <label for="email-dev-perso">Mon email</label>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-lg btn-purple  btn-block z-depth-2 ">Rappelez-moi ! <i
+                            <button class="btn btn-lg btn-purple  btn-block z-depth-2 " onclick="toastr.info('Nous enregistrons vos coordonnée et ne manquerons pas de vous contacter sous 48h ouvrés');">Rappelez-moi ! <i
                                     class="fa fa-paper-plane-o ml-1"></i></button>
                         </div>
                     </form>
@@ -172,7 +174,7 @@
                             <label for="email-cours-soutien">Mon email</label>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-lg btn-purple  btn-block z-depth-2 ">Rappelez-moi ! <i
+                            <button class="btn btn-lg btn-purple  btn-block z-depth-2 " onclick="toastr.info('Nous enregistrons vos coordonnée et ne manquerons pas de vous contacter sous 48h ouvrés');">Rappelez-moi ! <i
                                     class="fa fa-paper-plane-o ml-1"></i></button>
                         </div>
                     </form>
@@ -205,7 +207,7 @@
                             <label for="email-cours-intensif">Mon email</label>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-lg btn-purple  btn-block z-depth-2 ">Rappelez-moi ! <i
+                            <button class="btn btn-lg btn-purple  btn-block z-depth-2 " onclick="toastr.info('Nous enregistrons vos coordonnée et ne manquerons pas de vous contacter sous 48h ouvrés');" >Rappelez-moi ! <i
                                     class="fa fa-paper-plane-o ml-1"></i></button>
                         </div>
                     </form>
@@ -347,6 +349,7 @@
 
 <script type="text/javascript" src="bower_components/handlebars/handlebars.js"></script>
 <script type="text/javascript" src="js/eliteeducation.js"></script>
+<script type="text/javascript" src="js/toastr.min.js"></script>
 <!--<script>-->
 <!--new WOW().init();-->
 <!--</script>-->
