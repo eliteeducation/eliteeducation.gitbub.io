@@ -49,71 +49,7 @@
 <header>
 
     <!--Navbar-->
-    <nav class="navbar navbar-toggleable-md navbar-dark">
-        <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <span style="color:#FFD700">Elite</span>
-                <span style="color:#BC43F2">Education</span> Abidjan
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav1">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="coursvacances.html">Les cours de vacances</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="systeme.html">Le Système Elite Education </a>
-                    </li>
-
-                    <li class="nav-item dropdown btn-group">
-                        <a class="nav-link dropdown-toggle" id="services-menu" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">Les services</a>
-                        <div class="dropdown-menu dropdown" aria-labelledby="services-menu">
-                            <a class="dropdown-item" href="imagine.html">Imagine ton futur</a>
-                            <a class="dropdown-item" href="coachingweek.html">Le coaching</a>
-                            <!--<a class="dropdown-item">Something else here</a>-->
-                        </div>
-                    </li>
-                    <!--<li class="nav-item dropdown btn-group">-->
-                        <!--<a class="nav-link dropdown-toggle"  id="menu-systeme" data-toggle="dropdown"-->
-                           <!--aria-haspopup="true" aria-expanded="false">Les services </a>-->
-                        <!--<div class="dropdown-menu dropdown" aria-labelledby="menu-systeme">-->
-                            <!--<a class="dropdown-item" href="services.html">Les services</a>-->
-                            <!--&lt;!&ndash;<a class="dropdown-item">Conseillers d'Education</a>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<a class="dropdown-item">Something else here</a>&ndash;&gt;-->
-                        <!--</div>-->
-                    <!--</li>-->
-
-                    <li class="nav-item">
-                        <a class="nav-link">Intranet</a>
-                    </li>
-                    <li class="nav-item dropdown btn-group">
-                        <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">Recrutements</a>
-                        <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
-                            <a class="dropdown-item">Enseignants</a>
-                            <a class="dropdown-item">Conseillers d'Education</a>
-                            <!--<a class="dropdown-item">Something else here</a>-->
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contacts</a>
-                    </li>
-                </ul>
-                <!--<form class="form-inline waves-effect waves-light">-->
-                <!--<input class="form-control" type="text" placeholder="Recherche">-->
-                <!--</form>-->
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar navbar-toggleable-md navbar-dark" id="top-nav-bar"></nav>
     <!--/.Navbar-->
 
 </header>
@@ -343,8 +279,15 @@
 
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="bower_components/handlebars/handlebars.js"></script>
+<script type="text/javascript" src="js/eliteeducation.js"></script>
 
+<script>
 
+    var compiledTopmenuTemplate = Handlebars.getTemplate('topmenu');
+    var rendered =  compiledTopmenuTemplate({});
+    $('#top-nav-bar').html(rendered);
+</script>
 </body>
 
 </html>
