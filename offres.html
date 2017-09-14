@@ -335,7 +335,7 @@
         var save = function() {}
 
         $('#id-btn-rappelez-moi').on("click", function () {
-           save();
+            save();
 
             toastr.info('Nous enregistrons vos coordonnée et ne manquerons pas de vous contacter sous 48h ouvrés');
 
@@ -344,22 +344,8 @@
             $('#nom-prospect').val("");
             $('#email-prospect').val("");
 
-        $('#btn-lire-la-suite-remise-a-niv').on("click", function () {
-            console.log("click ens avlir plus")
 
-            $('#card-rappelez-moi-cours-intensif').css({'visibility': 'visible'});
-            $('#card-rappelez-moi-cours-soutien').css({'visibility': 'hidden'});
-            $('#card-rappelez-moi-dev-perso').css({'visibility': 'hidden'});
         });
-
-        $('#btn-lire-la-suite-cours-soutien').on("click", function () {
-            console.log("click ens avlir plus")
-
-            $('#card-rappelez-moi-cours-soutien').css({'visibility': 'visible'});
-            $('#card-rappelez-moi-dev-perso').css({'visibility': 'hidden'});
-            $('#card-rappelez-moi-cours-intensif').css({'visibility': 'hidden'});
-        });
-
 
     });
 
