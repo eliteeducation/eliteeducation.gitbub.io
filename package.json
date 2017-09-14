@@ -1,0 +1,31 @@
+{
+  "name": "papillon",
+  "version": "1.0.0",
+  "description": "Pipillon CRM application for Elite Education",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliteeducation/eliteeducation.github.io.git"
+  },
+  "keywords": [
+    "css",
+    "javascript",
+    "handlebars",
+    "serverless",
+    "firebase"
+  ],
+  "author": "Emmanuel BLONVIA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliteeducation/eliteeducation.github.io/issues"
+  },
+  "homepage": "https://github.com/eliteeducation/eliteeducation.github.io#readme",
+  "dependencies": {
+    "firebase": "^4.3.1",
+    "firebase-admin": "^5.2.1",
+    "firebase-functions": "^0.6.3"
+  }
+}
