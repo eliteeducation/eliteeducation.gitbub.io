@@ -132,26 +132,26 @@
 
                                 <div class="md-form">
                                     <i class="fa fa-fw  fa-user prefix purple-text"></i>
-                                    <input type="text" id="nom-dev-perso" class="form-control">
-                                    <label for="nom-dev-perso">Mon nom</label>
+                                    <input type="text" id="nom-prospect" class="form-control">
+                                    <label for="nom-prospect">Mon nom</label>
                                 </div>
                                 <div class="md-form">
                                     <i class="fa fa-fw fa-phone-square prefix purple-text "></i>
-                                    <input type="text" id="telephone-dev-perso" class="form-control">
-                                    <label for="telephone-dev-perso">Mon Téléphone</label>
+                                    <input type="text" id="telephone-prospect" class="form-control">
+                                    <label for="telephone-prospect">Mon Téléphone</label>
                                 </div>
 
                                 <div class="md-form">
                                     <i class="fa fa-fw  fa-envelope prefix purple-text "></i>
-                                    <input type="text" id="email-dev-perso" class="form-control">
-                                    <label for="email-dev-perso">Mon email</label>
+                                    <input type="text" id="email-prospect" class="form-control">
+                                    <label for="email-prospect">Mon email</label>
                                 </div>
                                 <div class="text-center">
 
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-lg btn-purple  btn-block z-depth-2 " onclick="toastr.info('Nous enregistrons vos coordonnée et ne manquerons pas de vous contacter sous 48h ouvrés');">Rappelez-moi ! <i
+                                <button class="btn btn-lg btn-purple  btn-block z-depth-2 " id="id-btn-rappelez-moi" >Rappelez-moi ! <i
                                         class="fa fa-paper-plane-o ml-1"></i></button>
                             </div>
                         </div>
@@ -330,15 +330,19 @@
 
 <script>
 
-   /* $(function () {
+    $(function () {
 
-        $('#btn-lire-la-suite-dev-p').on("click", function () {
-            console.log("click ens avlir plus")
+        var save = function() {}
 
-            $('#card-rappelez-moi-dev-perso').css({'visibility': 'visible'});
-            $('#card-rappelez-moi-cours-intensif').css({'visibility': 'hidden'});
-            $('#card-rappelez-moi-cours-soutien').css({'visibility': 'hidden'});
-        });
+        $('#id-btn-rappelez-moi').on("click", function () {
+           save();
+
+            toastr.info('Nous enregistrons vos coordonnée et ne manquerons pas de vous contacter sous 48h ouvrés');
+
+            $('#captureContactModal').css({'visibility': 'visible'});
+            $('#telephone-prospect').val("");
+            $('#nom-prospect').val("");
+            $('#email-prospect').val("");
 
         $('#btn-lire-la-suite-remise-a-niv').on("click", function () {
             console.log("click ens avlir plus")
@@ -357,7 +361,7 @@
         });
 
 
-    });*/
+    });
 
     var compiledTopmenuTemplate = Handlebars.getTemplate('topmenu');
     var rendered = compiledTopmenuTemplate({});
