@@ -339,7 +339,8 @@
 
             toastr.info('Nous enregistrons vos coordonnée et ne manquerons pas de vous contacter sous 48h ouvrés');
 
-            $('#captureContactModal').css({'visibility': 'hidden'});
+           // $('#captureContactModal').css({'visibility': 'hidden'});
+            $('#captureContactModal').modal('toggle');
            // $('#captureContactModal').attr({'aria-hidden': 'true'});
             $('#telephone-prospect').val("");
             $('#nom-prospect').val("");
