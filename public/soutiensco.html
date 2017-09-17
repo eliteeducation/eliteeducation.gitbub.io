@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Le développement Personnel par Elite Education Abidjan</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <![endif]-->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+
+        main {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+
+        .extra-margins {
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        .navbar {
+            background-color: #3b3b3f;
+        }
+
+        footer.page-footer {
+            background-color: #3b3b3f;
+            margin-top: 2rem;
+
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="./bower_components/handlebars/handlebars.js"></script>
+    <script type="text/javascript" src="js/eliteeducation.js"></script>
+    <script defer src="/__/firebase/4.3.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.3.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.3.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.3.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.3.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-toggleable-md navbar-dark" id="top-nav-bar"></nav>
+    <!--/.Navbar-->
+
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+
+    <!-- Service Tabs -->
+    <div class="col-lg-12">
+
+        <!--First row-->
+        <div class="row wow fadeIn" data-wow-delay="0.4s">
+            <div class="col-md-12">
+                <!--Product-->
+                <div class="product-wrapper">
+
+                    <!--Featured image-->
+                    <div class="view overlay hm-white-light">
+                        <img src="img/teacher-talking-with-students_970x450.jpg" class="img-fluid " alt="">
+                        <!--<div class="mask">-->
+                        <!--</div>-->
+
+                    </div>
+                    <!--/.Featured image-->
+
+                    <br>
+
+                    <!--Product data-->
+                    <div class="h2-responsive">Le Soutien scolaire par Elite Education&reg; Abidjan</div>
+                    <hr>
+
+                    <div class="h4-responsive">Vous souhaitez un soutien scolaire adapté pour votre enfant  ?</div>
+                    <div class="h4-responsive"> Elite Education vous  propose des cours de soutien pour les élèves du primaire (CM1&CM2), collège et lycée pendant l’année scolaire ou/et  les vacances scolaires :</div>
+
+
+                </div>
+                <!--Product-->
+
+            </div>
+        </div>
+        <!--/.First row-->
+
+        <!--Second row-->
+        <div class="row">
+
+            <!--Heading-->
+            <div class="col reviews wow fadeIn" data-wow-delay="0.4s">
+                <h2 class="h2-responsive">Détails</h2>
+            </div>
+
+            <!--First review-->
+            <div class="media wow fadeIn" data-wow-delay="0.2s">
+                <a class="media-left" href="#">
+                    <div class="col-1 mr-1">
+                        <i class="fa fa-graduation-cap fa-2x blue-text"></i>
+                    </div>
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Soutien scolaire Individuel</h4>
+
+                    <p>
+
+                        Parce chaque enfant est différent d'un autre, la méthode Elite Education s'adapte à votre enfant et non l'inverse.
+                        Lors des séances d'encadrement à votre domicile, notre enseignant apprend premièrement à connaitre votre enfant.
+                        Cela nous permet d'adapter le style d'enseignement à la personalité de votre enfant.
+
+                    </p>
+                </div>
+            </div>
+
+            <!--Second review-->
+            <div class="media wow fadeIn" data-wow-delay="0.2s">
+                <a class="media-left" href="#">
+                    <div class="col-1 mr-1">
+                        <i class="fa fa-graduation-cap fa-2x blue-text"></i>
+                    </div>
+                </a>
+            <div class="media-body">
+                <h4 class="media-heading">Le Soutien scolaire collectif</h4>
+
+                <p>
+                    En collectifs ( petits groupes) dans l’un de nos centres.
+                    Les cours sont assurés par des professeurs pédagogues qui permettent à chaque élève d’être rapidement autonome et d’améliorer ses résultats.
+                </p>
+            </div>
+        </div>
+
+
+        </div>
+
+        </div>
+        <!--/.Second row-->
+
+    </div>
+
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Footer -->
+
+
+</div>
+<!-- /.container -->
+
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only" id="ee-footer">
+
+
+
+</footer>
+<!--/.Footer-->
+
+
+<div id="bottom-page-scripts"></div>
+
+<script>
+
+    $(function(){
+        var compiledTopmenuTemplate = Handlebars.getTemplate('topmenu');
+        var rendered =  compiledTopmenuTemplate({});
+        $('#top-nav-bar').html(rendered);
+
+
+
+        var compiledBottomPagescriptsTemplate = Handlebars.getTemplate('bottom-page-scripts');
+        rendered =  compiledBottomPagescriptsTemplate({});
+        $('#bottom-page-scripts').html(rendered);
+
+
+        var compiledFooterTemplate = Handlebars.getTemplate('footer');
+        rendered =  compiledFooterTemplate({});
+        $('#ee-footer').html(rendered);
+
+    });
+
+
+
+</script>
+</body>
+
+</html>
