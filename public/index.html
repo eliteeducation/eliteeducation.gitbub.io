@@ -175,94 +175,31 @@
 
 
 
-
-
             <hr class="extra-margins">
 
             <!--Second row-->
             <div class="row">
                 <!--First columnn-->
-                <div class="col-lg-4">
+                <!--First columnn-->
+                <div class="col-lg-4" id="card-developpement-personnel">
                     <!--Card-->
-                    <div class="card wow fadeIn" data-wow-delay="0.4s">
 
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="img/black_female_teacher_with_studs_1536x1025.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-                        <!--/.Card image-->
-
-                        <!--Card content-->
-                        <div class="card-block">
-                            <!--Title-->
-                            <h4 class="card-title">Un suivi rapproché</h4>
-                            <!--Text-->
-                            <p class="card-text">Nous vous assurons à votre enfant, un suivi unique en son genre comprenant une collaboration étroite avec l'école de votre enfant.</p>
-                            <a href="#" class="btn btn-info">Lire la suite</a>
-                        </div>
-                        <!--/.Card content-->
-
-                    </div>
                     <!--/.Card-->
                 </div>
                 <!--First columnn-->
 
                 <!--Second columnn-->
-                <div class="col-lg-4">
+                <div class="col-lg-4" id="card-cours-soutien">
                     <!--Card-->
-                    <div class="card wow fadeIn" data-wow-delay="0.6s">
 
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="img/black_male_teacher_well_dressed_1280x851.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-                        <!--/.Card image-->
-
-                        <!--Card content-->
-                        <div class="card-block">
-                            <!--Title-->
-                            <h4 class="card-title">Un corps enseignant de haut niveau</h4>
-                            <!--Text-->
-                            <p class="card-text">Nos enseignants rigoureusement sélectionnés sont formés à la méthode Elite Education System.</p>
-                            <a "class="btn btn-info">Lire la suite</a>
-                        </div>
-                        <!--/.Card content-->
-
-                    </div>
                     <!--/.Card-->
                 </div>
                 <!--Second columnn-->
 
                 <!--Third columnn-->
-                <div class="col-lg-4">
+                <div class="col-lg-4" id="card-remise-a-niveau">
                     <!--Card-->
-                    <div class="card wow fadeIn" data-wow-delay="0.8s">
 
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="img/concentrating-teacher_900x600.jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-                        <!--/.Card image-->
-
-                        <!--Card content-->
-                        <div class="card-block">
-                            <h4 class="card-title">Une approche qualitative irr&eacute;prochable</h4>
-                            <p class="card-text">Nous mettons votre enfant est au centre de nos pr&eacute;ocupations.
-                                Le coach Elite Education doit apprendre à le connaitre...</p>
-                            <a   class="btn btn-info">Lire la suite</a>
-                        </div>
-                        <!--/.Card content-->
-
-                    </div>
                     <!--/.Card-->
                 </div>
                 <!--Third columnn-->
@@ -302,7 +239,52 @@
              rendered =  compiledFooterTemplate({});
             $('#ee-footer').html(rendered);
 
+
+
+            var save = function() {}
+
+            $('#id-btn-rappelez-moi').on("click", function () {
+                save();
+
+                var prospect ={
+                };
+                prospect.nom = $('#nom-prospect').val();
+                prospect.telephone = $('#telephone-prospect').val();
+                prospect.email = $('#email-prospect').val();
+                prospect.creationDate=firebase.database.ServerValue.TIMESTAMP;
+
+                defaultDatabase.ref('/prospects').push(prospect).then(function(snap){
+                    console.log("snap : "+ snap);
+                });
+                toastr.options.fadeOut = 4500
+                toastr.info('Monsieur, Madame ' +   prospect.nom+ ', \nVos coordonnées ont bie été enregistrées, nous vous recontacterons sous 48h ouvrés');
+
+                $('#captureContactModal').modal('toggle');
+                $('#telephone-prospect').val("");
+                $('#nom-prospect').val("");
+                $('#email-prospect').val("");
+
+
+
+            })
+
+
+
+            var compiledTopmenuTemplate = Handlebars.getTemplate('card-developpement-personnel');
+            var rendered = compiledTopmenuTemplate({});
+            $('#card-developpement-personnel').html(rendered);
+
+            var compiledTopmenuTemplate = Handlebars.getTemplate('card-cours-soutien');
+            var rendered = compiledTopmenuTemplate({});
+            $('#card-cours-soutien').html(rendered);
+
+
+            var compiledTopmenuTemplate = Handlebars.getTemplate('card-remise-a-niveau');
+            var rendered = compiledTopmenuTemplate({});
+            $('#card-remise-a-niveau').html(rendered);
+
         });
+
 
 
 
