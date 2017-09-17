@@ -77,9 +77,6 @@
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <h2 class="h2-responsive">Découvrez Elite Education, Demandez-nous une évaluation gratuite</h2>
-            <hr>
-
-
         </div>
 
 
@@ -127,48 +124,7 @@
             <div class="col-lg-4" id="card-rappelez-moi-cours-soutien" >
                 <!-- Button trigger modal -->
 
-
                 <!-- Modal -->
-                <div class="modal fade" id="captureContactModal" tabindex="-1" role="dialog" aria-labelledby="captureContactModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <p class="h5 text-center purple-text  ">Je suis intéressé(e), Contactez-moi !</p>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-
-                                <div class="md-form">
-                                    <i class="fa fa-fw  fa-user prefix purple-text"></i>
-                                    <input type="text" id="nom-prospect" class="form-control">
-                                    <label for="nom-prospect">Mon nom</label>
-                                </div>
-                                <div class="md-form">
-                                    <i class="fa fa-fw fa-phone-square prefix purple-text "></i>
-                                    <input type="text" id="telephone-prospect" class="form-control">
-                                    <label for="telephone-prospect">Mon Téléphone</label>
-                                </div>
-
-                                <div class="md-form">
-                                    <i class="fa fa-fw  fa-envelope prefix purple-text "></i>
-                                    <input type="text" id="email-prospect" class="form-control">
-                                    <label for="email-prospect">Mon email</label>
-                                </div>
-                                <div class="text-center">
-
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-lg btn-purple  btn-block z-depth-2 " id="id-btn-rappelez-moi" >Rappelez-moi ! <i
-                                        class="fa fa-paper-plane-o ml-1"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
 
             <!--Second columnn-->
@@ -390,6 +346,11 @@
     var compiledTopmenuTemplate = Handlebars.getTemplate('card-remise-a-niveau');
     var rendered = compiledTopmenuTemplate({});
     $('#card-remise-a-niveau').html(rendered);
+
+
+    var compiledTopmenuTemplate = Handlebars.getTemplate('contact-modal');
+     rendered = compiledTopmenuTemplate({});
+    $('#card-rappelez-moi-cours-soutien').html(rendered);
 
 </script>
 </body>

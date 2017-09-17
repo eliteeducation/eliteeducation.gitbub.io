@@ -200,10 +200,15 @@
                 <div class="col-lg-4" id="card-remise-a-niveau">
                     <!--Card-->
 
-                    <!--/.Card-->
+                    <!--/.Card
                 </div>
                 <!--Third columnn-->
             </div>
+                <div  id="card-rappelez-moi-cours-soutien" >
+                    <!-- Button trigger modal -->
+
+                    <!-- Modal -->
+                </div>
             <!--/.Second row-->
         </div>
         <!--/.Main layout-->
@@ -245,7 +250,7 @@
 
             $('#id-btn-rappelez-moi').on("click", function () {
                 save();
-
+console.log('service log')
                 var prospect ={
                 };
                 prospect.nom = $('#nom-prospect').val();
@@ -266,7 +271,7 @@
 
 
 
-            })
+            });
 
 
 
@@ -282,6 +287,10 @@
             var compiledTopmenuTemplate = Handlebars.getTemplate('card-remise-a-niveau');
             var rendered = compiledTopmenuTemplate({});
             $('#card-remise-a-niveau').html(rendered);
+
+            var compiledTopmenuTemplate = Handlebars.getTemplate('contact-modal');
+            rendered = compiledTopmenuTemplate({});
+            $('#card-rappelez-moi-cours-soutien').html(rendered);
 
         });
 
