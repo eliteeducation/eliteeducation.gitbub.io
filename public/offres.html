@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -104,9 +104,7 @@
 
             <!--Third columnn-->
             <div class="col-lg-4" id="card-remise-a-niveau">
-                <!--Card-->
 
-                <!--/.Card-->
             </div>
 
 
@@ -127,11 +125,7 @@
                 <!-- Modal -->
             </div>
 
-            <!--Second columnn-->
 
-            <!--Third columnn-->
-
-            <!--Third columnn-->
         </div>
 
     </div>
@@ -156,111 +150,9 @@
 </main>
 
 <!--Footer-->
-<footer class="page-footer center-on-small-only">
-
-    <!--Footer Links-->
-    <div class="container-fluid">
-        <div class="row">
-
-            <!--First column-->
-            <div class="col-md-3 offset-lg-1 hidden-lg-down">
-                <h5 class="title">A propos de Elite Education</h5>
-                <p>La société Elite Education a été crée par des enseignants, des coaches ainsi que des parents d'élèves
-                    convaincus du fait que l'éducation de leurs enfants ne consiste pas uniquement en une accumulation
-                    de connaissances intellectuelles.
-
-                </p>
-
-                <p>
-                    Grâce au concours de formateurs et de professionnels de la pédagogie, ils ont mis au point un
-                    système permettant d'assurer le succès scolaire et l'entrée dans le monde professionnel des jeunes
-                    élèves et étudiants.
-                </p>
+<footer class="page-footer center-on-small-only" id="ee-footer">
 
 
-            </div>
-            <!--/.First column-->
-
-            <hr class="hidden-md-up">
-
-            <!--Second column-->
-            <div class="col-lg-2 col-md-4 offset-lg-1">
-                <h5 class="title">Renouvellement</h5>
-                <ul>
-                    <li><a href="#!">YEKANGOA 2018</a></li>
-                    <li><a href="#!">YEKANGOA GOSPEL EXPO</a></li>
-                    <li><a href="coursvacances.html">Cours de vacances</a></li>
-
-                </ul>
-            </div>
-            <!--/.Second column-->
-
-            <hr class="hidden-md-up">
-
-            <!--Third column-->
-            <div class="col-lg-2 col-md-4">
-                <h5 class="title">Développement personel</h5>
-                <ul>
-                    <li><a href="imagine.html">Imagine ton futur</a></li>
-                    <li><a href="#!">Sessions de coaching groupé</a></li>
-                    <li><a href="#!">Coaching individuel</a></li>
-
-                </ul>
-            </div>
-            <!--/.Third column-->
-
-            <hr class="hidden-md-up">
-
-            <!--Fourth column-->
-            <div class="col-lg-2 col-md-4">
-                <h5 class="title">Nous Contacter</h5>
-                <ul>
-                    <li><a href="#!">Recrutement</a></li>
-                    <li><a href="#!">Partenariats</a></li>
-                    <li><a href="#!">Investisseurs</a></li>
-                    <!--<li><a href="#!">Link 4</a></li>-->
-                </ul>
-            </div>
-            <!--/.Fourth column-->
-
-        </div>
-    </div>
-    <!--/.Footer Links-->
-
-    <hr>
-
-    <!--Call to action-->
-    <div class="call-to-action">
-        <h4>Elite Education, Abidian</h4>
-        <p>
-            Angré, Quartier Sanon Dokui, à 800m de la pharmacie les Perles et 100m de l'Ecole ITES 2 Plateaux</p>
-        <ul>
-            <li>bonjour@elite-education.net</li>
-            <li>+33 6 11 33 12 36</li>
-            /
-            <li>+225 88 06 17 79</li>
-            /
-            <li>+225 88 06 17 77</li>
-            /
-            <li>+225 75 41 31 50</li>
-            /
-            <li>+225 88 06 17 80</li>
-            <!--<li><a target="_blank" href="http://mdbootstrap.com/getting-started/" class="btn btn-danger" rel="nofollow">Sign up!</a></li>-->
-            <!--<li><a target="_blank" href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-info" rel="nofollow">Learn more</a></li>-->
-        </ul>
-    </div>
-    <!--/.Call to action-->
-
-    <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="container-fluid">
-            <p> &copy; Elite Education
-                <script>document.write(new Date().getFullYear())</script>
-            </p>
-
-        </div>
-    </div>
-    <!--/.Copyright-->
 
 </footer>
 <!--/.Footer-->
@@ -335,16 +227,16 @@
 
 
     var compiledTopmenuTemplate = Handlebars.getTemplate('card-developpement-personnel');
-    var rendered = compiledTopmenuTemplate({});
+    rendered = compiledTopmenuTemplate({});
     $('#card-developpement-personnel').html(rendered);
 
     var compiledTopmenuTemplate = Handlebars.getTemplate('card-cours-soutien');
-    var rendered = compiledTopmenuTemplate({});
+    rendered = compiledTopmenuTemplate({});
     $('#card-cours-soutien').html(rendered);
 
 
     var compiledTopmenuTemplate = Handlebars.getTemplate('card-remise-a-niveau');
-    var rendered = compiledTopmenuTemplate({});
+    rendered = compiledTopmenuTemplate({});
     $('#card-remise-a-niveau').html(rendered);
 
 

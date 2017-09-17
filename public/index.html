@@ -10,15 +10,17 @@
     <title>Elite Education Abidjan</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">-->
+    <link href="css/toastr.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/toastr.min.css" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+
+    <script src="https://use.fontawesome.com/4cc28b32c9.js"></script>
 
     <!-- Template styles -->
     <style rel="stylesheet">
@@ -33,7 +35,8 @@
             margin-top: 1rem;
             margin-bottom: 2.5rem;
         }
-         .navbar {
+
+        .navbar {
             background-color: #3b3b3f;
         }
 
@@ -43,9 +46,6 @@
 
         }
     </style>
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="./bower_components/handlebars/handlebars.js"></script>
-    <script type="text/javascript" src="js/eliteeducation.js"></script>
     <script defer src="/__/firebase/4.3.1/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/4.3.1/firebase-auth.js"></script>
@@ -198,21 +198,29 @@
 
                 <!--Third columnn-->
                 <div class="col-lg-4" id="card-remise-a-niveau">
-                    <!--Card-->
 
-                    <!--/.Card
-                </div>
-                <!--Third columnn-->
-            </div>
-                <div  id="card-rappelez-moi-cours-soutien" >
-                    <!-- Button trigger modal -->
 
-                    <!-- Modal -->
                 </div>
+
             <!--/.Second row-->
-        </div>
-        <!--/.Main layout-->
+            </div>
+        <!--/.Second row-->
 
+        <hr class="extra-margins">
+
+        <div class="row">
+
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-4" id="card-rappelez-moi-cours-soutien" >
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+            </div>
+        <!--/.Main layout-->
+        </div>
+        </div>
     </main>
 
     <!--Footer-->
@@ -224,7 +232,21 @@
     <!--/.Footer-->
 
 
-   <div id="bottom-page-scripts"></div>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="bower_components/handlebars/handlebars.js"></script>
+    <script type="text/javascript" src="js/eliteeducation.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
+    <script type="text/javascript" src="js/toastr.min.js"></script>
 
     <script>
 
