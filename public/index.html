@@ -251,28 +251,11 @@
     <script>
 
         $(function(){
-            var compiledTopmenuTemplate = Handlebars.getTemplate('topmenu');
-            var rendered =  compiledTopmenuTemplate({});
-            $('#top-nav-bar').html(rendered);
 
 
-
-            var compiledBottomPagescriptsTemplate = Handlebars.getTemplate('bottom-page-scripts');
-             rendered =  compiledBottomPagescriptsTemplate({});
-            $('#bottom-page-scripts').html(rendered);
+            $('#id-btn-rappelez-moi').on("click",function () {
 
 
-            var compiledFooterTemplate = Handlebars.getTemplate('footer');
-             rendered =  compiledFooterTemplate({});
-            $('#ee-footer').html(rendered);
-
-
-
-            var save = function() {}
-
-            $('#id-btn-rappelez-moi').on("click", function () {
-                save();
-console.log('service log')
                 var prospect ={
                 };
                 prospect.nom = $('#nom-prospect').val();
@@ -294,28 +277,39 @@ console.log('service log')
 
 
             });
-
-
-
-            var compiledTopmenuTemplate = Handlebars.getTemplate('card-developpement-personnel');
-            var rendered = compiledTopmenuTemplate({});
-            $('#card-developpement-personnel').html(rendered);
-
-            var compiledTopmenuTemplate = Handlebars.getTemplate('card-cours-soutien');
-            var rendered = compiledTopmenuTemplate({});
-            $('#card-cours-soutien').html(rendered);
-
-
-            var compiledTopmenuTemplate = Handlebars.getTemplate('card-remise-a-niveau');
-            var rendered = compiledTopmenuTemplate({});
-            $('#card-remise-a-niveau').html(rendered);
-
-            var compiledTopmenuTemplate = Handlebars.getTemplate('contact-modal');
-            rendered = compiledTopmenuTemplate({});
-            $('#card-rappelez-moi-cours-soutien').html(rendered);
-
+            
         });
+        var compiledTopmenuTemplate = Handlebars.getTemplate('card-developpement-personnel');
+        var rendered = compiledTopmenuTemplate({});
+        $('#card-developpement-personnel').html(rendered);
 
+        var compiledTopmenuTemplate = Handlebars.getTemplate('card-cours-soutien');
+        var rendered = compiledTopmenuTemplate({});
+        $('#card-cours-soutien').html(rendered);
+
+
+        var compiledTopmenuTemplate = Handlebars.getTemplate('card-remise-a-niveau');
+        var rendered = compiledTopmenuTemplate({});
+        $('#card-remise-a-niveau').html(rendered);
+
+        var compiledTopmenuTemplate = Handlebars.getTemplate('contact-modal');
+        rendered = compiledTopmenuTemplate({});
+        $('#card-rappelez-moi-cours-soutien').html(rendered);
+
+
+
+        var compiledTopmenuTemplate = Handlebars.getTemplate('topmenu');
+        var rendered =  compiledTopmenuTemplate({});
+        $('#top-nav-bar').html(rendered);
+
+        var compiledBottomPagescriptsTemplate = Handlebars.getTemplate('bottom-page-scripts');
+        rendered =  compiledBottomPagescriptsTemplate({});
+        $('#bottom-page-scripts').html(rendered);
+
+
+        var compiledFooterTemplate = Handlebars.getTemplate('footer');
+        rendered =  compiledFooterTemplate({});
+        $('#ee-footer').html(rendered);
 
 
 
